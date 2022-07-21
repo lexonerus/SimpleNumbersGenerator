@@ -15,7 +15,7 @@ struct MainView: View {
     
     private var colors: [Color] = [Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)),Color(#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1))]
     private var gridColumns = [GridItem(.flexible(), spacing: 0), GridItem(.flexible(), spacing: 0)]
-    private let limit = 999_999_999_999
+    let limit = 999_999_999_999
 
     var body: some View {
         // Display header
@@ -43,7 +43,7 @@ struct MainView: View {
                 if selector == 0 {
                     ScrollView {
                         LazyVGrid(columns: gridColumns, spacing: 0) {
-                            ForEach((0...limit), id: \.self) {
+                            ForEach((0...model.primeArray.count), id: \.self) {
                                 Text("  \(model.primeArray[$0])    ")
                                         .font(.system(size: 30))
                                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 80)
@@ -62,7 +62,7 @@ struct MainView: View {
                 if selector == 1 {
                     ScrollView {
                         LazyVGrid(columns: gridColumns, spacing: 0) {
-                            ForEach((0...limit), id: \.self) {
+                            ForEach((0...model.fibArray.count), id: \.self) {
                                 if $0 <= 87 {
                                     Text("  \(model.generateFibonacci(n: $0+1))    ")
                                         .font(.system(size: 30))
