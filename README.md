@@ -26,10 +26,10 @@
 сделать как угодно, во вложении картинка просто как пример.
 
 ### Пример:
-![Test Task](https://github.com/lexonerus/SimpleNumbersGenerator/tree/main/pictures/Screenshot 2022-07-21 at 10.43.55.png)
+[![Test Task](https://github.com/lexonerus/SimpleNumbersGenerator/tree/main/pictures/Screenshot 2022-07-21 at 10.43.55.png)]()
 
 # Итог работы:
-![Image info](https://github.com/lexonerus/SimpleNumbersGenerator/tree/main/pictures/photo_2022-07-21 10.31.36.jpeg)
+[![Image info](https://github.com/lexonerus/SimpleNumbersGenerator/tree/main/pictures/photo_2022-07-21 10.31.36.jpeg)]()
 ![Image info](./pictures/photo_2022-07-21 10.31.40.jpeg "a title")
 ![Image info](./pictures/photo_2022-07-21 10.31.42.jpeg "a title")
 ![Image info](./pictures/photo_2022-07-21 10.31.44.jpeg "a title")
