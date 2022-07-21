@@ -29,7 +29,7 @@
 ![Test Task](/pictures/005.png)
 
 # Итог работы:
-!(/pictures/001.jpeg)
+![Простые числа](/pictures/001.jpeg)
 !(/pictures/002.jpeg)
 !(/pictures/003.jpeg)
 !(/pictures/004.jpeg)
