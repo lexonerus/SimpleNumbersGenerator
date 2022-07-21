@@ -24,3 +24,12 @@
 
 Остальное по вкусу. Переключение списка «простые/фибоначчи» можно
 сделать как угодно, во вложении картинка просто как пример.
+
+### Пример:
+![Image info](./pictures/Screenshot 2022-07-21 at 10.43.55.png "a title")
+
+# Итог работы:
+![Image info](./pictures/photo_2022-07-21 10.31.36.jpeg "a title")
+![Image info](./pictures/photo_2022-07-21 10.31.40.jpeg "a title")
+![Image info](./pictures/photo_2022-07-21 10.31.42.jpeg "a title")
+![Image info](./pictures/photo_2022-07-21 10.31.44.jpeg "a title")
