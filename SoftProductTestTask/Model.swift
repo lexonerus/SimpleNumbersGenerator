@@ -11,7 +11,7 @@ import Combine
 class Model: ObservableObject {
     
     @Published var primeArray   = [2]
-    @Published var fibArray     = [2,3]
+    @Published var fibArray     = [0,1,1,2,3]
     private var currentItem     = 3
     
     init() {
