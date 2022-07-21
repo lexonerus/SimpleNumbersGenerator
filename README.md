@@ -30,6 +30,6 @@
 
 # Итог работы:
 [![Image info](https://github.com/lexonerus/SimpleNumbersGenerator/tree/main/pictures/photo_2022-07-21 10.31.36.jpeg)]()
-![Image info](./pictures/photo_2022-07-21 10.31.40.jpeg "a title")
+!(/pictures/photo_2022-07-21 10.31.40.jpeg)
 ![Image info](./pictures/photo_2022-07-21 10.31.42.jpeg "a title")
 ![Image info](./pictures/photo_2022-07-21 10.31.44.jpeg "a title")
