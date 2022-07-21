@@ -30,6 +30,6 @@
 
 # Итог работы:
 ![Простые числа](/pictures/001.jpeg)
-!(/pictures/002.jpeg)
-!(/pictures/003.jpeg)
-!(/pictures/004.jpeg)
+![Простые числа](/pictures/003.jpeg)
+![Числа Фибоначчи](/pictures/002.jpeg)
+![Числа Фибоначчи](/pictures/004.jpeg)
