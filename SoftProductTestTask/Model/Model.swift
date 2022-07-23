@@ -28,7 +28,6 @@ class Model: ObservableObject {
     }
     
     func generatePrimes() {
-
         if currentItem == 3 {
             for index in stride(from: currentItem, to: currentItem+500, by: 2) {
                 var count = 0

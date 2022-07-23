@@ -27,7 +27,10 @@ struct MainView: View {
                     ForEach((0...model.primeArray.count), id: \.self) {
                         setupText(number: (model.primeArray[$0]), color: $0)
                             .onAppear {
-                                model.generatePrimes()
+                                DispatchQueue.main.async {
+                                    model.generatePrimes()
+                                }
+                                
                             }
                     }
                 }
