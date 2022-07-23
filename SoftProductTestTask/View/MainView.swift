@@ -25,7 +25,6 @@ struct MainView: View {
             ScrollView {
                 LazyVGrid(columns: gridColumns, spacing: 0) {
                     ForEach((0...model.primeArray.count), id: \.self) {
-                        
                         setupText(number: (model.primeArray[$0]), color: $0)
                             .onAppear {
                                 model.generatePrimes()
@@ -56,27 +55,26 @@ struct MainView: View {
     }
     
     func setupHeader() -> some View {
-        return (
-                VStack {
-                Spacer()
-                      .frame(height: 20)
-                    Text(Constants.title)
-                    .foregroundColor(.white)
-                    .font(
-                        .system(size: 20)
-                        .bold()
-                    )
-                    Picker(Constants.title, selection: $selector, content: {
-                        Text(Constants.primeTitle)
-                        .tag(0)
-                        Text(Constants.fiboTitle)
-                        .tag(1)
-                })
-                    .pickerStyle(SegmentedPickerStyle())
-                Spacer()
-                    .frame(height: 10)
-                } .background(Color(#colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1)))
-        )
+        let stack = VStack {
+            Spacer()
+                .frame(height: 20)
+            Text(Constants.title)
+                .foregroundColor(.white)
+                .font(
+                    .system(size: 20)
+                    .bold()
+                )
+            Picker(Constants.title, selection: $selector, content: {
+                Text(Constants.primeTitle)
+                    .tag(0)
+                Text(Constants.fiboTitle)
+                    .tag(1)
+            })
+                .pickerStyle(SegmentedPickerStyle())
+            Spacer()
+                .frame(height: 10)
+            } .background(Color(#colorLiteral(red: 0.4620226622, green: 0.8382837176, blue: 1, alpha: 1)))
+        return stack
     }
 
     func setupText(number: Int, color: Int) -> some View {
