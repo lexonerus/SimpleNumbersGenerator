@@ -80,7 +80,7 @@ struct MainView: View {
     }
 
     func setupText(number: Int, color: Int) -> some View {
-        return Text(String(number))
+        return Text("   \(number)   ")
             .font(.system(size: 30))
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 80)
             .background(colors[color % colors.count])

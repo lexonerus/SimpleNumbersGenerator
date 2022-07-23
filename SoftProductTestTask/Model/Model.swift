@@ -28,23 +28,7 @@ class Model: ObservableObject {
     }
     
     func generatePrimes() {
-        /*
-        if currentItem == 3 {
-            for index in currentItem...(currentItem+1000) {
-                if !(2...index-1).contains(where: {index%$0 == 0}) {
-                    primeArray.append(index)
-                }
-            }
-            currentItem += 1000
-        } else {
-            for index in currentItem...(currentItem+10) {
-                if !(2...index-1).contains(where: {index%$0 == 0}) {
-                    primeArray.append(index)
-                }
-            }
-            currentItem += 10
-        }
-        */
+
         if currentItem == 3 {
             for index in stride(from: currentItem, to: currentItem+500, by: 2) {
                 var count = 0
@@ -58,7 +42,6 @@ class Model: ObservableObject {
                 }
                 if count == 0 {
                     primeArray.append(index)
-                    //prime = index
                 }
             }
             currentItem += 500
@@ -75,7 +58,6 @@ class Model: ObservableObject {
                 }
                 if count == 0 {
                     primeArray.append(index)
-                    //prime = index
                 }
             }
             currentItem += 5
