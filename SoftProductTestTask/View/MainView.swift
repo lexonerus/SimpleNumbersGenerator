@@ -30,11 +30,11 @@ struct MainView: View {
                                 DispatchQueue.main.async {
                                     model.generatePrimes()
                                 }
-                                
                             }
                     }
                 }
             }
+            
         }
         // Display fibo
         if selector == 1 {
@@ -86,7 +86,7 @@ struct MainView: View {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 80)
             .background(colors[color % colors.count])
             .scaledToFill()
-            .minimumScaleFactor(0.3)
+            .minimumScaleFactor(0.2)
             .lineLimit(1)
     }
 }
