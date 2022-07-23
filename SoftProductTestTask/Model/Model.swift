@@ -46,7 +46,7 @@ class Model: ObservableObject {
         }
         */
         if currentItem == 3 {
-            for index in stride(from: currentItem, to: currentItem+1000, by: 2) {
+            for index in stride(from: currentItem, to: currentItem+500, by: 2) {
                 var count = 0
                 for indexJ in stride(from: currentItem, to: index/2, by: 2) {
                     if index % indexJ == 0 {
@@ -61,9 +61,9 @@ class Model: ObservableObject {
                     //prime = index
                 }
             }
-            currentItem += 1000
+            currentItem += 500
         } else {
-            for index in stride(from: currentItem, to: currentItem+10, by: 2) {
+            for index in stride(from: currentItem, to: currentItem+5, by: 2) {
                 var count = 0
                 for indexJ in stride(from: currentItem, to: index/2, by: 2) {
                     if index % indexJ == 0 {
@@ -78,7 +78,7 @@ class Model: ObservableObject {
                     //prime = index
                 }
             }
-            currentItem += 10
+            currentItem += 5
         }
 
         
