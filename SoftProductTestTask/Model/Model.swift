@@ -27,7 +27,7 @@ class Model: ObservableObject {
     }
     
     func generatePrimes() {
-            for index in stride(from: currentItem, to: currentItem+50, by: 2) {
+            for index in stride(from: currentItem, to: currentItem+100, by: 2) {
                 var count = 0
                 for indexJ in stride(from: currentItem, to: index/2, by: 2) {
                     if index % indexJ == 0 {
@@ -43,7 +43,7 @@ class Model: ObservableObject {
                     }
                 }
             }
-            currentItem += 50
+            currentItem += 100
         }
 
     func checkPrime(number: Int) -> Bool {
