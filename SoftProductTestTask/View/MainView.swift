@@ -42,14 +42,10 @@ struct MainView: View {
             ScrollView {
                 LazyVGrid(columns: gridColumns, spacing: 0) {
                     ForEach((0...Constants.limit), id: \.self) {
-                        if $0 < 92 {
-                            
-                            setupText(number: (model.generateFibonacci(n: $0+1)), color: $0)
-
+                        if $0 < 90 {
+                            setupText(number: (model.generateFibonacci(n: $0)), color: $0)
                         } else {
-                            
                             setupText(number: (model.fibArray[$0 % model.fibArray.count]), color: $0)
-                            
                         }
                     }
                 }
