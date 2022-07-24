@@ -25,6 +25,7 @@ class Model: ObservableObject {
         fibArray.append(fibonacciNumber)
         return fibonacciNumber
     }
+    
     func generatePrimes() {
         if currentItem == 3 {
             for index in stride(from: currentItem, to: currentItem+200, by: 2) {
@@ -89,6 +90,26 @@ class Model: ObservableObject {
             }
             return i
         }
+    }
+    
+    func simplePrimeGenerator(from begin: Int, to end: Int) -> [Int] {
+        var result: [Int] = []
+        
+        for i in begin...end {
+            if checkPrime(number: i) {
+                result.append(i)
+            }
+        }
+        
+        return result
+    }
+    
+    func simpleFiboGenerator(from begin: Int, to end: Int) -> [Int] {
+        var result: [Int] = []
+        // Code will be here
+        
+        
+        return result
     }
 
 }
