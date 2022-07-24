@@ -17,7 +17,6 @@ class Model: ObservableObject {
     init() {
         generatePrimes()
     }
-    
     func generateFibonacci(n: Int) -> Int {
         if (fibArray.count > n) {
             return fibArray[n];
@@ -26,10 +25,9 @@ class Model: ObservableObject {
         fibArray.append(fibonacciNumber)
         return fibonacciNumber
     }
-    
     func generatePrimes() {
         if currentItem == 3 {
-            for index in stride(from: currentItem, to: currentItem+500, by: 2) {
+            for index in stride(from: currentItem, to: currentItem+200, by: 2) {
                 var count = 0
                 for indexJ in stride(from: currentItem, to: index/2, by: 2) {
                     if index % indexJ == 0 {
@@ -40,12 +38,14 @@ class Model: ObservableObject {
                     }
                 }
                 if count == 0 {
-                    primeArray.append(index)
+                    if checkPrime(number: index) {
+                        primeArray.append(index)
+                    }
                 }
             }
-            currentItem += 500
+            currentItem += 200
         } else {
-            for index in stride(from: currentItem, to: currentItem+5, by: 2) {
+            for index in stride(from: currentItem, to: currentItem+50, by: 2) {
                 var count = 0
                 for indexJ in stride(from: currentItem, to: index/2, by: 2) {
                     if index % indexJ == 0 {
@@ -56,14 +56,39 @@ class Model: ObservableObject {
                     }
                 }
                 if count == 0 {
-                    primeArray.append(index)
+                    if checkPrime(number: index) {
+                        primeArray.append(index)
+                    }
                 }
             }
-            currentItem += 5
+            currentItem += 50
         }
 
         
 
+    }
+    // For future improvements...
+    func checkPrime(number: Int) -> Bool {
+        var i = 2
+        while number / 2 >= i {
+            if number % i == 0 {
+                return false
+            }
+            i += 1
+        }
+        return true
+    }
+    
+    func getPrime(number: Int) -> Int {
+        var i = number
+        if checkPrime(number: i) {
+            return i
+        } else {
+            while checkPrime(number: i) == false {
+                i += 1
+            }
+            return i
+        }
     }
 
 }
